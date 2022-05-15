@@ -36,7 +36,7 @@ const Home = () => {
                         <h2>What Global Warming really is?</h2>
                         <div className={Styles.Definition}>
                             <div className={Styles.Video}>
-                                <iframe src="https://giphy.com/embed/ZBtOMat6TCulEzJ7cU" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+                                <iframe src="https://giphy.com/embed/ZBtOMat6TCulEzJ7cU" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen title="Global Warming"></iframe>
                             </div>
                             <div className={Styles.Description}>
                                 <div className={Styles.Left}>

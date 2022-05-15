@@ -1,0 +1,288 @@
+.TopContainer::before {
+    content: '';
+    position: absolute;
+    background-image: linear-gradient(180deg, #FFFFFF 0%, #343434 35%, #ff0606 100%);
+    z-index: 500;
+    opacity: 0.3;
+    width: 100%;
+    height: 652px;
+}
+
+.TopContainer {
+    background-color: black;
+    position: relative;
+    z-index: 200;
+    width: 100%;
+    overflow: hidden;
+    
+}
+
+.BackgroundEarth {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.LogoContainer {
+    position: absolute;
+    width: max-content;
+    margin-left: 20px;
+    border: 2px solid rgb(203, 201, 201);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top: none;
+    z-index: 500;
+    background-color: black;
+
+   
+
+}
+.Logo {
+    transform: scale(0.2);
+    margin: -170px -150px;
+
+}
+
+
+
+.Heading{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center; /** Y-axis align **/
+    justify-content: center; /** X-axis align **/
+    z-index: 600;
+}
+
+.Heading h1 {
+    font-weight: 400;
+    font-size: 50px;
+    color: #f8f8ff;
+    text-align: center;
+}
+
+.MiddleContainer {
+    color: black;
+    padding-top: 30px;
+    border: 5px solid rgba(0, 0, 0, 0.853);
+    padding-bottom: 30px;
+}
+
+.Head {
+    text-align: center;
+}
+
+.Content {
+    margin-top: 20px;
+    padding-left: 65px;
+    padding-right: 65px;
+}
+
+.Definition {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+}
+
+.Video {
+    border-radius: 20px;
+    overflow: hidden;
+    width: max-content;
+    height: 250px;
+}
+
+.Description {
+    width: 50%;
+    text-align: justify;
+    display: flex;
+   flex-direction: row; 
+   gap: 20px;
+}
+
+.Meter {
+    transform: scale(0.8);
+    margin-top: -40px;
+    display: none;
+}
+
+.NasaLink {
+    text-align: center;
+}
+
+.NasaLink a{
+    color: #343434;
+}
+
+.NasaLink a:hover {
+    color: red;
+}
+
+.BottomContainer {
+    position: relative;
+    text-align: center;
+    color: #DDDDDD;
+    background-color: black;
+}
+
+/* .BottomContainer::before {
+    content: '';
+    position: absolute;
+    background-image: linear-gradient(180deg, #FFFFFF 0%, #343434 35%, green 100%);
+    z-index: 300;
+    opacity: 0.3;
+    width: 100%;
+    height: 290px;
+    left: 0;
+} */
+
+.Children {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+
+}
+
+.Button {
+    width: 300px;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: #ED5107;
+    color: #DDDDDD;
+    z-index: 600;
+}
+
+.Button:hover {
+    cursor: pointer;
+}
+
+.Active {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 300px;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: green;
+    color: #f8f8ff;
+}
+
+li{
+    text-align: left;
+    padding: 12px;
+}
+
+.HiddenText {
+    display: none;
+}
+
+.ShowText {
+    display: block;
+}
+
+.PledgeButton,
+.RightText {
+    margin: 30px;
+}
+
+
+
+.Footer {
+    padding: 20px;
+    text-align: center;
+    color: #f8f8ff;
+    background-color: black;
+    border-top: 2px dashed grey;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.Icon {
+    width: 50px;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 30px;
+
+}
+
+.About a{
+    text-decoration: none;
+    color: white;
+}
+
+.About h3 {
+    letter-spacing: 5px;
+}
+
+.LogoBottom {
+    display: flex;
+    align-items: center;
+    color: green;
+}
+
+.BottomContainer h1{
+    padding-top: 20px;
+}
+
+@media screen and (max-width: 426px) { 
+    .Children,
+    .Description,
+    .Definition,
+    .LogoBottom {
+        flex-direction: column;
+    }
+
+    .Meter {
+        display: none;
+    }
+
+    .Video {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .Description {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .LogoBottom {
+        font-size: 7px;
+        width: 100%;
+    }
+
+    .Icon {
+        width: 30px;
+        margin: 10px;
+    }
+
+    .About h3{
+        font-size: 13px;
+        margin-bottom: 10px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .Definition {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .Video {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .Description {
+        width: 100%;
+    }
+
+}
